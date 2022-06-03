@@ -1,0 +1,36 @@
+h1, h2, p {
+    padding: 0;
+    margin: 0;
+    font: 1em/1.33 Verdana, sans-serif;
+ }
+
+ h1, h2 {
+    color: red;
+    margin: 0.83em 0 0.17em 0; 
+ }
+
+ h1{
+  font-size: 1.33em;
+ }
+ 
+ h2{
+  font-size: 1.17em;
+ }
+
+ p{
+  margin: 0 0 0.5em 0;
+ }
+ /* margins operate in a clockwise direction (top, right, bottom, left) */
+ p:first-of-type{
+     font: 1.17em/1.33 Verdana, sans-serif;
+ }
+ p+p{
+  text-indent: 5em;   
+ }
+ p:first{
+     text-indent: 0em;
+ }
+ body{
+     background: green url(https://media.istockphoto.com/photos/red-apple-picture-id184276818?s=612x612) no-repeat fixed top center;
+ }
+
