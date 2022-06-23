@@ -14,13 +14,9 @@
     --c-blue: rgb(38, 139, 210); 
     --c-cyan: rgb(42, 161, 152); 
     --c-green: rgb(133, 153, 0);
-}
-header,footer,body{
-    color: var(--base-font-color)
-}
-header, footer{
-    background-color: var(--c-background-highlights)
-}
+    --c-beige: rgb(229, 229, 172);
+
+
 body{
     background-color: var(--c-background-color);
 }
@@ -29,4 +25,10 @@ a:link{
 }
 a:hover{
     background-color: var(--c-orange)
+}
+
+.darkmode{
+    background-color: black;
+    color: white;
+    
 }

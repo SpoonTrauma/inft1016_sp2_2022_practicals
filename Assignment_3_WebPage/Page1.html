@@ -11,7 +11,23 @@
   </head>
 
   <body>
-    <!-- Here is our main header that is used across all the pages of our website -->
+    <script>
+        function Darkmode() {
+        var element = document.body;
+        element.classList.toggle("darkmode");
+        }
+        function NameSayer(){
+          var str = document.getElementById("Name").value;
+          alert("Hello" + ' ' + str)
+        }
+        function Combiner(){
+          const inpKey = document.getElementById("Name")
+          const key = inpKey.value;
+          console.log(key);
+        }
+
+
+    </script>
 
     <header>
       <h1>Header</h1>
@@ -28,8 +44,8 @@
        <!-- A Search form is another common non-linear way to navigate through a website. -->
 
        <form>
-         <input type="search" name="q" placeholder="Search query">
-         <input type="submit" value="Go!">
+        <input id="text1" type="text" name="user_name" placeholder="Enter your name!">
+        <button type="submit" onclick="NameSayer(); Combiner()" id="text1">Enter</button>
        </form>
      </nav>
 
@@ -57,23 +73,26 @@
 
       <p>   
         <div class="BirdButton">
-              <button
+            <button
                 href="#"
-                onclick="document.getElementById('box').innerHTML = 'Pardalote by fir0002 (CC-by-NC)'; document.getElementById('ind').src = 'http://www.outgrabe.net/bird00.jpg';">Pardalote</button>
-              <button
+                onclick="document.getElementById('box').innerHTML = 'Pardalote by fir0002 (CC-by-NC)'; document.getElementById('ind').src = 'http://www.outgrabe.net/bird00.jpg';">Pardalote
+            </button>
+            <button
                 href="#"
-                onclick="document.getElementById('box').innerHTML = 'Purple swamp hen by Toby Hudson (CC-by-SA)'; document.getElementById('ind').src = 'http://www.outgrabe.net/bird01.jpg';">Purple Swamp Hen</button>
-      
-              <button
+                onclick="document.getElementById('box').innerHTML = 'Purple swamp hen by Toby Hudson (CC-by-SA)'; document.getElementById('ind').src = 'http://www.outgrabe.net/bird01.jpg';">Purple Swamp Hen
+            </button>
+            <button
                 href="#"
-                onclick="document.getElementById('box').innerHTML = 'Inland Thornbill by Peter Jacobs (CC-by-SA)'; document.getElementById('ind').src = 'http://www.outgrabe.net/bird02.jpg';">White-headed Stilt</button>
-      
-              <button
+                onclick="document.getElementById('box').innerHTML = 'Inland Thornbill by Peter Jacobs (CC-by-SA)'; document.getElementById('ind').src = 'http://www.outgrabe.net/bird02.jpg';">White-headed Stilt
+            </button>
+            <button
                 href="#"
-                onclick="document.getElementById('box').innerHTML = 'Rose Robin by JJ Harrison (CC-by-SA)'; document.getElementById('ind').src = 'http://www.outgrabe.net/bird03.jpg';">Inland Thornbill</button>
-              <button
+                onclick="document.getElementById('box').innerHTML = 'Inland Thornbill by JJ Harrison (CC-by-SA)'; document.getElementById('ind').src = 'http://www.outgrabe.net/bird03.jpg';">Inland Thornbill
+            </button>
+            <button
                 href="#"
-                onclick="document.getElementById('box').innerHTML = 'Rose Robin by JJ Harrison (CC-by-SA)'; document.getElementById('ind').src = 'http://www.outgrabe.net/bird04.jpg';">Rose Robin</button>
+                onclick="document.getElementById('box').innerHTML = 'Rose Robin by JJ Harrison (CC-by-SA)'; document.getElementById('ind').src = 'http://www.outgrabe.net/bird04.jpg';">Rose Robin
+            </button>
         </div>    
         <p><img id="ind" src="http://www.outgrabe.net/bird00.jpg " /></p>
         <p id="box">Pardalote by fir0002 (CC-by-NC)</p>
@@ -91,10 +110,16 @@
           <li><a href="#">Oh well...</a></li>
         </ul>
       </aside>
-
+    <p>
+        <button
+                href="#"
+                onclick="Darkmode()">Toggle Theme
+        </button>
+    </p>
     </main>
 
     <!-- And here is our main footer that is used across all the pages of our website -->
+
 
     <footer>
       <p>©Copyright 2050 by nobody. All rights reversed.</p>
